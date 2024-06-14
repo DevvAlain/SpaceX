@@ -29,7 +29,7 @@ public class BankAccountTest {
     public void testWithdraw() {
         boolean success = account.withdraw(30.0);
         Assert.assertTrue(success, "Withdrawal should be successful");
-        Assert.assertEquals(account.getBalance(), 80.0, "Balance after withdrawal should be 70.0");
+        Assert.assertEquals(account.getBalance(), 70.0, "Balance after withdrawal should be 70.0");
     }
 
     @Test
