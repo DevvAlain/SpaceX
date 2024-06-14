@@ -6,7 +6,7 @@
 # separate terms of service, privacy policy, and support
 # documentation.
 
-name: Math Utility Maven Project (CI applied)
+name: Microsoft Maven Project (CI applied)
 
 on:
   push:
