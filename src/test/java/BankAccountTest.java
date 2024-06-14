@@ -34,7 +34,7 @@ public class BankAccountTest {
 
     @Test
     public void testWithdrawMoreThanBalance() {
-        boolean success = account.withdraw(160.0); // Adjust to test beyond overdraft
+        boolean success = account.withdraw(150.0);
         Assert.assertFalse(success, "Withdrawal should fail when exceeding overdraft limit");
         Assert.assertEquals(account.getBalance(), 100.0, "Balance should remain 100.0 after failed withdrawal");
     }
@@ -48,7 +48,7 @@ public class BankAccountTest {
 
     @Test
     public void testWithdrawExceedingOverdraft() {
-        boolean success = account.withdraw(160.0); // Withdraw more than balance and overdraft
+        boolean success = account.withdraw(160.0);
         Assert.assertFalse(success, "Withdrawal exceeding overdraft limit should fail");
         Assert.assertEquals(account.getBalance(), 100.0, "Balance should remain 100.0 after failed overdraft withdrawal");
     }

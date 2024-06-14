@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="BankAccountTest" time="0.352" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="BankAccountTest" time="0.357" tests="8" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="21"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,9 +15,8 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
-    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire2379447356875779298\surefirebooter11160508077379917998.jar C:\Users\Admin\AppData\Local\Temp\surefire2379447356875779298 2024-06-14T09-45-21_588-jvmRun1 surefire9223815483145000486tmp surefire_05453837906314285867tmp"/>
+    <property name="sun.java.command" value="C:\Users\Admin\AppData\Local\Temp\surefire11509203589513006890\surefirebooter2643250449595829702.jar C:\Users\Admin\AppData\Local\Temp\surefire11509203589513006890 2024-06-14T09-58-52_997-jvmRun1 surefire11548147526217246804tmp surefire_04592355859078195430tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="test" value="BankAccountTest"/>
     <property name="surefire.test.class.path" value="C:\Users\Admin\Desktop\BankAccount\target\test-classes;C:\Users\Admin\Desktop\BankAccount\target\classes;C:\Users\Admin\.m2\repository\org\testng\testng\7.4.0\testng-7.4.0.jar;C:\Users\Admin\.m2\repository\com\beust\jcommander\1.78\jcommander-1.78.jar;C:\Users\Admin\.m2\repository\org\webjars\jquery\3.5.1\jquery-3.5.1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\Admin"/>
@@ -31,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire2379447356875779298\surefirebooter11160508077379917998.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Admin\AppData\Local\Temp\surefire11509203589513006890\surefirebooter2643250449595829702.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="21.0.3+7-LTS-152"/>
@@ -60,12 +59,16 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="65.0"/>
   </properties>
-  <testcase name="testAddInterest" classname="BankAccountTest" time="0.004"/>
+  <testcase name="testAddInterest" classname="BankAccountTest" time="0.003"/>
   <testcase name="testDeposit" classname="BankAccountTest" time="0"/>
   <testcase name="testInitialBalance" classname="BankAccountTest" time="0"/>
   <testcase name="testOverdraft" classname="BankAccountTest" time="0.001"/>
   <testcase name="testTransactionHistory" classname="BankAccountTest" time="0"/>
-  <testcase name="testWithdraw" classname="BankAccountTest" time="0.001"/>
-  <testcase name="testWithdrawExceedingOverdraft" classname="BankAccountTest" time="0"/>
-  <testcase name="testWithdrawMoreThanBalance" classname="BankAccountTest" time="0"/>
+  <testcase name="testWithdraw" classname="BankAccountTest" time="0"/>
+  <testcase name="testWithdrawExceedingOverdraft" classname="BankAccountTest" time="0.001"/>
+  <testcase name="testWithdrawMoreThanBalance" classname="BankAccountTest" time="0.005">
+    <failure message="Withdrawal should fail when exceeding overdraft limit expected [false] but found [true]" type="java.lang.AssertionError">java.lang.AssertionError: Withdrawal should fail when exceeding overdraft limit expected [false] but found [true]
+	at BankAccountTest.testWithdrawMoreThanBalance(BankAccountTest.java:38)
+</failure>
+  </testcase>
 </testsuite>
