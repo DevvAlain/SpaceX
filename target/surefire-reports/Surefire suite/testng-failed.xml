@@ -5,8 +5,8 @@
     <classes>
       <class name="BankAccountTest">
         <methods>
-          <include name="testWithdrawMoreThanBalance"/>
           <include name="setUp"/>
+          <include name="testDeposit"/>
         </methods>
       </class> <!-- BankAccountTest -->
     </classes>
