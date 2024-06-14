@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-14T09:45:22 ICT" name="Surefire suite" finished-at="2024-06-14T09:45:22 ICT" duration-ms="39">
+    <groups>
+    </groups>
+    <test started-at="2024-06-14T09:45:22 ICT" name="Surefire test" finished-at="2024-06-14T09:45:22 ICT" duration-ms="39">
+      <class name="BankAccountTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddInterest()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testAddInterest" finished-at="2024-06-14T09:45:22 ICT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddInterest -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDeposit()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testDeposit" finished-at="2024-06-14T09:45:22 ICT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeposit -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInitialBalance()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testInitialBalance" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInitialBalance -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testOverdraft()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testOverdraft" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testOverdraft -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testTransactionHistory()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testTransactionHistory" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTransactionHistory -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWithdraw()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testWithdraw" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdraw -->
+        <test-method signature="testWithdrawMoreThanBalance()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testWithdrawMoreThanBalance" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawMoreThanBalance -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="setUp" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testWithdrawExceedingOverdraft()[pri:0, instance:BankAccountTest@b9afc07]" started-at="2024-06-14T09:45:22 ICT" name="testWithdrawExceedingOverdraft" finished-at="2024-06-14T09:45:22 ICT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testWithdrawExceedingOverdraft -->
+      </class> <!-- BankAccountTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
