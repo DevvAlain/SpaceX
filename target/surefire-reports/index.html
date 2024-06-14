@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,21 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods, 1 failed,   7 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="BankAccountTest" class="method navigator-link" hash-for-method="testWithdrawMoreThanBalance">testWithdrawMoreThanBalance</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">8 methods,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -151,6 +137,11 @@
                         <a href="#" panel-name="suite-Surefire_suite" title="BankAccountTest" class="method navigator-link" hash-for-method="testWithdrawExceedingOverdraft">testWithdrawExceedingOverdraft</a> <!-- method navigator-link -->
                       </span>
                       <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BankAccountTest" class="method navigator-link" hash-for-method="testWithdrawMoreThanBalance">testWithdrawMoreThanBalance</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
                   </li>
                 </ul>
@@ -163,26 +154,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">BankAccountTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWithdrawMoreThanBalance">
-                  </a> <!-- testWithdrawMoreThanBalance -->
-                  <span class="method-name">testWithdrawMoreThanBalance</span>
-                  <div class="stack-trace">java.lang.AssertionError: Withdrawal should fail when exceeding overdraft limit expected [false] but found [true]
-	at BankAccountTest.testWithdrawMoreThanBalance(BankAccountTest.java:38)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -236,6 +207,13 @@
                   <a name="testWithdrawExceedingOverdraft">
                   </a> <!-- testWithdrawExceedingOverdraft -->
                   <span class="method-name">testWithdrawExceedingOverdraft</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testWithdrawMoreThanBalance">
+                  </a> <!-- testWithdrawMoreThanBalance -->
+                  <span class="method-name">testWithdrawMoreThanBalance</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -295,7 +273,7 @@ data.addRows(8);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testAddInterest')
 data.setCell(0, 2, 'BankAccountTest')
-data.setCell(0, 3, 2);
+data.setCell(0, 3, 3);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testOverdraft')
 data.setCell(1, 2, 'BankAccountTest')
@@ -305,30 +283,30 @@ data.setCell(2, 1, 'testWithdrawExceedingOverdraft')
 data.setCell(2, 2, 'BankAccountTest')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testTransactionHistory')
+data.setCell(3, 1, 'testWithdrawMoreThanBalance')
 data.setCell(3, 2, 'BankAccountTest')
 data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testDeposit')
+data.setCell(4, 1, 'testTransactionHistory')
 data.setCell(4, 2, 'BankAccountTest')
 data.setCell(4, 3, 0);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testWithdraw')
+data.setCell(5, 1, 'testDeposit')
 data.setCell(5, 2, 'BankAccountTest')
 data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testInitialBalance')
+data.setCell(6, 1, 'testWithdraw')
 data.setCell(6, 2, 'BankAccountTest')
 data.setCell(6, 3, 0);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testWithdrawMoreThanBalance')
+data.setCell(7, 1, 'testInitialBalance')
 data.setCell(7, 2, 'BankAccountTest')
 data.setCell(7, 3, 0);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 3 ms</span>
+              <span class="suite-total-time">Total running time: 4 ms</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -365,62 +343,60 @@ return data;
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">10 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">10 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testDeposit</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-start">10 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">10 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testInitialBalance</span>
-                <span class="method-start">10 ms</span>
+                <span class="method-start">11 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">10 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testOverdraft</span>
-                <span class="method-start">10 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
                 <span class="method-start">11 ms</span>
-              </div> <!-- configuration-method before -->
+              </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testTransactionHistory</span>
-                <span class="method-start">11 ms</span>
+                <span class="method-start">12 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp</span>
-                <span class="method-start">11 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">12 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testWithdraw</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-start">13 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWithdrawExceedingOverdraft</span>
-                <span class="method-start">12 ms</span>
+                <span class="method-start">13 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testWithdrawMoreThanBalance</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">13 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testWithdrawMoreThanBalance</span>
-                <span class="method-start">13 ms</span>
-              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

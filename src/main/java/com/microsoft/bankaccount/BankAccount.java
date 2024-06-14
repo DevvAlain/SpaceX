@@ -9,7 +9,6 @@ package com.microsoft.bankaccount;
  * @author Admin
  */
 
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,6 +24,8 @@ public class BankAccount {
         this.transactionHistory.add("Account opened with balance: " + initialBalance);
     }
 
+    //hello
+    
     public double getBalance() {
         return balance;
     }

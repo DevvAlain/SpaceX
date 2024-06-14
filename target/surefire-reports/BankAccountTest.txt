@@ -1,8 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: BankAccountTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.357 s <<< FAILURE! - in BankAccountTest
-testWithdrawMoreThanBalance(BankAccountTest)  Time elapsed: 0.005 s  <<< FAILURE!
-java.lang.AssertionError: Withdrawal should fail when exceeding overdraft limit expected [false] but found [true]
-	at BankAccountTest.testWithdrawMoreThanBalance(BankAccountTest.java:38)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.329 s - in BankAccountTest
